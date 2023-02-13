@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-image:url(./tomorrowland.jpg) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass{
+    background-color: white;
+    min-height: 60vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 20px;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle1,
+ .circle2 {
+    background-color: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.3));
+    border-radius: 20px;
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+.circle1{
+    top:5% ;
+    right: 6%;
+}
+.circle2{
+    bottom:5% ;
+    left: 10%;
+}
+.dashboard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    
+}
+.booking{
+    flex: 2;
+}
+.links{
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+.links h2{
+    padding: 0rem 2rem;
+}
+h1{
+    font-weight: 800;
+    opacity: 0.8;
+    color: #24252A;
+}
+h2, p{
+    font-weight: 800;
+    opacity: 0.8;
+    color: #24252A;
+}
+h3{
+    font-weight: 800;
+    opacity: 0.9;
+    color: #24252A;
+}
+.member h3{
+    font-weight: 600;
+    color: #24252A;
+}
+.booking{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5rem;
+}
+.card{
+    display: flex;
+    
+    background-color: rgba(240, 248, 255, 0.417);
+    border-radius: 2rem;
+    margin: 2rem 0rem;
+    padding: 1rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+    justify-content: space-between;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Saira Condensed', sans-serif;
+}
+.button{
+    display: inline-flex;
+    height: 36px;
+    width: 100px;
+    border-radius: 5px;
+    
+    border-color: black;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(240, 255, 255, 0.681);
+}
+.button:hover{
+    background-color: rgba(240, 255, 255, 0.199);
+}
+.button:active{
+    background-color: rgba(240, 255, 255, 0.014);
+}
+.button-text, .button-icon{
+    display: inline-flex;
+    padding: 0px 12px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.button-icon{
+    font-size: 1.5em;
+}
+.card a, .links a, .member a{
+    text-decoration: none;
+}
